@@ -1,0 +1,34 @@
+In this web development practice, we are creating an ANALOG CLOCK
+where you could find and understand the formulas/calculations
+being used under the coding part!!
+
+12 hr-> 360deg (in order to achieve the hour hand, minute hand and second hand to point to exact 12, we need to rotate 360deg)
+1 hr-> 360/12 -> 30deg
+
+for H hr -> 30h deg  (hour hand)
+
+60min -> 30deg
+1min -> 30/60 -> 1/2 deg
+
+for M min -> M/2 deg rotation
+
+*****FORMULA 1*****
+(30H+M/2) ////for rotating hour hand (we are including minutes also to calculate the exact hour..for eg, if the hour hand is between 12 & 1)
+
+///////////////////////////////
+60min -> 360deg
+1min -> 360/60 -> 6deg
+
+for M min -> 6M deg rotation
+
+*****FORMULA 2*****
+(6M) ////for rotating minute hand (we are neglecting the effect of seconds in minute calculation because its effect won't create much impact in the minute calculation)
+
+///////////////////////////////
+60sec -> 360deg
+1sec -> 360/60 -> 6deg
+
+for S sec -> 6S deg rotation
+
+*****FORMULA 3*****
+(6S) ////for rotating seconds hand
